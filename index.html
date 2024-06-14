@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Viagem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Viagem</h1>
+        <form id="calcForm">
+            <label for="distancia">Distância Percorrida (km):</label>
+            <input type="number" id="distancia" required>
+
+            <label for="precoPorLitro">Preço por Litro (R$):</label>
+            <input type="number" id="precoPorLitro" step="0.01" required>
+
+            <label for="consumoMedio">Consumo Médio do Veículo (km/l):</label>
+            <input type="number" id="consumoMedio" step="0.1" required>
+
+            <label for="idaVolta">Incluir ida e volta?</label>
+            <input type="checkbox" id="idaVolta">
+
+            <label for="meses">Quantos meses:</label>
+            <input type="number" id="meses" required>
+
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
